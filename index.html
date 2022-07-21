@@ -2,6 +2,24 @@
 <html>
 <head>
   <style>
+    @font-face { font-family: Anironn; src: url('media/fonts/anirm___.ttf'); }
+    @font-face { font-family: Anironn; font-weight: bold; src: url('media/fonts/anirb___.ttf'); }
+    body {
+      background-image: url('media/pictures/two_trees.jpg');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .mainquote {
+      position: absolute;
+      top: 50%;
+      width: 50%;
+      transform: translate(50%, -50%);
+      padding: 20px;
+      font-family: Anironn;
+      font-size: 25px;
+      text-shadow: grey 1px 2px;
+    }
     .topnav {
       background-color: #333;
       overflow: hidden;
@@ -16,10 +34,12 @@
     }
     .topnav a:hover {
       background-color: #ddd;
+      font-weight: bold;
       color: black;
     }
     .topnav a.active {
-      background-color: #04AA6D;
+      font-weight: bold;
+      background-color: green;
       color: white;
     }
   </style>
@@ -30,6 +50,9 @@
     <a href="#news">Timeline</a>
     <a href="#contact">Maps</a>
     <a href="#about">Genealogy</a>
+  </div>
+  <div class="mainquote">
+    <p>"There was a time when the world was so young, there had not yet been a sunrise. <br>But even then there was <font size=40px>light</font>."</p>
   </div>
 </body>
 </html>
